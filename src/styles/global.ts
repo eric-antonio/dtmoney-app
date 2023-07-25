@@ -3,6 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle =  createGlobalStyle`
     :root{
         --background: #f0f2f5;
+        --red:#E52E4D;
+        --blue:#5429CC;
+
+        --blue-light:#6933FF;
+        --text-title:#969CB3;
+
+        --background:#0F02F5;
+        --shape:#FFFFFF;
     }
 
     *{
@@ -26,4 +34,12 @@ export const GlobalStyle =  createGlobalStyle`
         -webkit-font-smoothing:antialiased;
     }
 
+    button{
+        cursor: pointer;
+    }
+
+    [disabled]{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
 `;
