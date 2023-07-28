@@ -5,6 +5,8 @@ export const GlobalStyle =  createGlobalStyle`
         --background: #323238;
         --red:#E52E4D;
         --text-title:#969CB3;
+        --success: #00B37E;
+        --denied:#F75A68;
         --shape:#FFFFFF;
         --header:#121214;
         --dashboard:#7882A2;
@@ -36,6 +38,9 @@ export const GlobalStyle =  createGlobalStyle`
     body{
         background: var(--background);
         -webkit-font-smoothing:antialiased;
+    }
+    body , input , textarea, button{
+        font-family: 'Poppins', sans-serif;
     }
 
     button{
