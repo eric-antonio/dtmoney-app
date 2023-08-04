@@ -11,6 +11,12 @@ export const  Container =  styled.div`
         background: var(--dashboard);
         padding: 1.5rem;
         border-radius:4px;
-        color:var(--text)
+        color:var(--text);
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 `;
