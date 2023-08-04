@@ -19,7 +19,10 @@ export const  Container =  styled.div`
             justify-content: space-between;
         }
         strong{
-            
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 3rem;
         }
     }
 `;
