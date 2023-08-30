@@ -21,6 +21,19 @@ export const Container = styled.div`
             border: 0;
             color: var(--text);
             background-color: var(--dashboard);
+            border-radius: 0.25rem;
+
+            .title{
+                color: var(--title);
+            }
+            
+            &.deposit{
+                color: var(--success);
+            }
+            &.withdraw{
+                color: var(--denied);
+            }
         }
+        
     }
 `;
