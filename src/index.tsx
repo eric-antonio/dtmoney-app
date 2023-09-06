@@ -10,7 +10,11 @@ createServer({
     this.get('/transactions',()=>{
       return[
         {
-          id:1
+          id:1,
+          title: 'Transaction',
+          amount:400,
+          category:'Food',
+          createData: new Date(),
         }
       ]
     })
@@ -23,4 +27,3 @@ const root = ReactDOM.createRoot(
     <App />
   </React.StrictMode>
 );
-
