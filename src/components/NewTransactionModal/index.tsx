@@ -22,17 +22,15 @@ export function NewTransactionModal( {isOpen, onRequestClose }: NewTransactionsM
 
       <Container> 
         <h2>Cadastrar Transação</h2>
-        <form>
+    
+        <input type='text' placeholder='Titulo'/>
 
-          <input type='text' placeholder='Titulo'/>
+        <input type='number' placeholder='Valor'/>
 
-          <input type='number' placeholder='Valor'/>
+        <input placeholder='Categoria'/>
 
-          <input placeholder='Categoria'/>
+        <button type='submit' className='submitBTN'>Cadastrar</button>
 
-          <button type='submit'>Cadastrar</button>
-
-        </form>
       </Container>
        
   </Modal>

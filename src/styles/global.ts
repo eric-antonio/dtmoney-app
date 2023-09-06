@@ -61,7 +61,7 @@ export const GlobalStyle =  createGlobalStyle`
 
 
     .react-modal-overlay{
-        background: rgba(0,0,0,0.5) ;
+        background: rgba(0,0,0,0.9) ;
         position: fixed;
         top: 0;
         bottom: 0;
