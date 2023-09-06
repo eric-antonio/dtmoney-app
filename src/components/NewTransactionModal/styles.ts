@@ -31,6 +31,7 @@ export const Container = styled.div`
 
     button[type='submit']{
         color: var(--text);
+        font-weight: 600;
         width: 100%;
         padding: 0 1.5rem;
         height: 4rem;
@@ -44,7 +45,9 @@ export const Container = styled.div`
         transition: 0.2s;
 
         &:hover{
-            filter: brightness(0.9);
+          filter: brightness(0.9);
         }
     }
+
+  
 `;
