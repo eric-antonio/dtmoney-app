@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import  CloseImg from '../../assets/close.svg'
 import EntradaImg from '../../assets/IconUp.svg';
 import SaidasImg from '../../assets/IconDown.svg'
-import {Container, TransactionTypeContainer } from'./styles'
+import {Container, RadioBox, TransactionTypeContainer } from'./styles'
 
 interface NewTransactionsModalProps{
     isOpen:boolean;
@@ -41,22 +41,25 @@ export function NewTransactionModal( {isOpen, onRequestClose }: NewTransactionsM
 
         <TransactionTypeContainer>
 
-          <button
+          <RadioBox
             type='button'
-            className={type === 'desposit' ? 'active'  : ''}
             onClick={()=> setType('deposit')}
+            isActive={type === 'deposit'}
           >
             <img src={EntradaImg} alt='entradas'/>
             <span>Entrada</span>
-          </button>
+
+          </RadioBox>
           
-          <button
+          <RadioBox
             type='button'
             onClick={()=> setType('withdraw')}
+            isActive={type === 'withdraw'}
           >
-            <img src={SaidasImg} alt='entradas'/>
-            <span>Entrada</span>
-          </button>
+            <img src={SaidasImg} alt='Saidas'/>
+            <span>Saidas</span>
+
+          </RadioBox>
 
         </TransactionTypeContainer>
 
