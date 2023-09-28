@@ -3,7 +3,9 @@ import Modal from 'react-modal';
 import  CloseImg from '../../assets/close.svg'
 import EntradaImg from '../../assets/IconUp.svg';
 import SaidasImg from '../../assets/IconDown.svg'
-import {Container, RadioBox, TransactionTypeContainer } from'./styles'
+import {Container, RadioBox, TransactionTypeContainer } from'./styles';
+import { api } from '../../services/apis';
+
 
 interface NewTransactionsModalProps{
   isOpen:boolean;
@@ -21,11 +23,14 @@ export function NewTransactionModal( {isOpen, onRequestClose }: NewTransactionsM
 
   function handelCreateNewTransaction( event : FormEvent){
     event.preventDefault();
-    console.log({
+    const data ={
       title,
       valor,
-      category
-    })
+      category,
+      type
+    };
+
+    api.post('transactions',data)
   }
 
 
